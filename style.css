@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ec691d;
+    color: #fff;
+    font-family: "Exo 2", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+p, h1, h2, h3 {
+    font-size: 32px;
+}
+
+button {
+    background-color: #ec691d;
+    color: white;
+    font-weight: 500;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 20px 60px;
+    margin-left: 20px;
+    margin-top: 30px;
+    transition: ease-in-out 0.3s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: white;
+    color: #ec691d;
+}
