@@ -49,7 +49,7 @@ function startTimer() {
     if (seconds > 9) {
         appendSec.innerHTML = seconds;
     }
-    if (seconds === 59) {
+    if (seconds === 60) {
         seconds = 0;
         minutes += 1;
         appendMin.innerHTML = "0" + minutes
