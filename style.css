@@ -1,39 +1,85 @@
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    background-color: #ec691d;
-    color: #fff;
-    font-family: "Exo 2", sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    background-color: #D8E8FF;
+    font-family: "Roboto Mono", sans-serif;
+    font-size: 48px;
+    font-style: normal;
     height: 100vh;
-    overflow-y: hidden;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
 
-p, h1, h2, h3 {
-    font-size: 32px;
+.container {
+    background-color: #EDF6FF;
+    width: 320px;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 10px;
+}
+
+.time-preview {
+    background-color: #3194FF;
+    color: #EDF6FF;
+    padding: 10px;
+    width: 107%;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 0.7em;
+}
+
+.buttons {
+    width: 100%;
+    margin-top: 45px;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 button {
-    background-color: #ec691d;
-    color: white;
-    font-weight: 500;
-    border: 2px solid white;
+    padding: 15px 20px;
+    border: none;
     border-radius: 5px;
-    padding: 20px 60px;
-    margin-left: 20px;
-    margin-top: 30px;
-    transition: ease-in-out 0.3s;
+    background-color: #D8E8FF;
+    color: #3194FF;
     cursor: pointer;
+    font-weight: 500;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    position: relative;
 }
 
 button:hover {
-    background-color: white;
-    color: #ec691d;
+    box-shadow: none;
+    top: 3px;
+}
+
+button:nth-of-type(2) {
+    color: #EDF6FF;
+    background-color: #3194FF;
+}
+
+.author {
+    font-size: 16px;
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+}
+
+.author a {
+    text-decoration: none;
+    color: #3194FF;
+    cursor: pointer;
 }
